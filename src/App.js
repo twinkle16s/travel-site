@@ -4,7 +4,6 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import { useEffect } from "react";
 import Footer from "./Components/Footer";
-// import Alert from './Components/Alert';
 import Background from "./Components/Background";
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
   return (
     <>
       <Router>
-        {/* <Alert/> */}
         <Navbar />
         <Background />
         <Home />
