@@ -1,0 +1,50 @@
+
+.div{
+  overflow: hidden;
+  margin-top: 50px;
+} 
+ .text-area{
+  color: rgba(2, 16, 22, 0.829);
+  width: 100%;
+    text-align: center;
+  padding-bottom: 50px;
+ }
+  
+.image-list{
+  display: flex;
+  gap: 150px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.image{
+  width: 300px;
+  height: 300px;
+  border-radius: 4px;
+}
+.image-div{
+  transition: transform 0.3s;
+}
+
+
+.image-div:hover {
+  transform: scale(1.2); 
+}
+.text{
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+  padding: 10px;
+  width:298px;
+
+ }
+
+
+@media screen and (max-width:760px){
+  
+  .image-list{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 50px;
+  }
+}

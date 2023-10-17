@@ -1,0 +1,47 @@
+.footer-container{
+    margin-top: 40px;
+    padding-top: 40px;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.877);
+    height: 50vh;
+}
+.footer-lines{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer-lines p{
+    margin-bottom: 20px;
+}
+.footer-form{
+    margin-bottom: 15px;
+}
+.input-text{
+    padding:14px;
+    border: 2px solid black;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    width: 40%;
+}
+.input-text::placeholder{
+    color: black;
+    font-weight: bold;
+}
+.btn{
+    width: 40%;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+.logo-icon{
+    margin: 20px 0px 5px 0px;
+    color: white;
+    font-size: 25px;
+}
+.media-icon i{
+    color:white;
+     margin-right: 5px;
+     font-size: 25px;
+}
