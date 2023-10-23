@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import './Navbar.css';
-;
-
-const navItems = [
+ 
+interface NavItems {
+  title:string;
+  url:String;
+}
+const navItems: NavItems[] = [
   {
     title: "Home",
     url: '/',
@@ -14,8 +17,8 @@ const navItems = [
     url: '/about',
   },
   {
-    title: "Service",
-    url: '/service',
+    title: "Services",
+    url: '/services',
   },
   {
     title: "Product",
@@ -23,7 +26,7 @@ const navItems = [
   }
 ];
 
-function Navbar(){
+const Navbar:React.FC = () => {
   const [click, setClick] = useState(false);
 
   return (
@@ -37,7 +40,7 @@ function Navbar(){
         <ul className="menu-list">
           {navItems.map((navItem,index) => (
             <li className="list-item" key={index}>
-              <Link to={navItem.url} className="list">
+              <Link to="/" className="list">
                 {navItem.title}
               </Link>
             </li>
@@ -53,7 +56,7 @@ function Navbar(){
             <ul className="menu">
             {navItems.map((navItem, index) => (
               <li className="item" key={index} onClick={() => { setClick(!click) }}>
-                <Link to={navItem.url} className="list-name">
+                <Link to="/" className="list-name">
                   {navItem.title}
                 </Link>
               </li>
